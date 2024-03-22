@@ -11,7 +11,7 @@ import PropertyMap from '@/components/PropertyMap';
 const PropertyDetails = ({ property }) => {
   return (
     <main>
-      <div className='bg-white p-6 rounded-lg shadow-md text-center md:text-left'>
+      <div className='bg-yellow-300 p-6 rounded-lg shadow-md text-center md:text-left'>
         <div className='text-gray-500 mb-4'>{property.type}</div>
         <h1 className='text-3xl font-bold mb-4'>{property.name}</h1>
         <div className='text-gray-500 mb-4 flex align-middle justify-center md:justify-start'>
@@ -28,7 +28,7 @@ const PropertyDetails = ({ property }) => {
         <div className='flex flex-col md:flex-row justify-around'>
           <div className='flex items-center justify-center mb-4 border-b border-gray-200 md:border-b-0 pb-4 md:pb-0'>
             <div className='text-gray-500 mr-2 font-bold'>Nightly</div>
-            <div className='text-2xl font-bold text-blue-500'>
+            <div className='text-2xl font-bold text-yellow-500'>
               {property.rates.nightly ? (
                 `$${property.rates.nightly.toLocaleString()}`
               ) : (
@@ -61,7 +61,7 @@ const PropertyDetails = ({ property }) => {
 
       <div className='bg-white p-6 rounded-lg shadow-md mt-6'>
         <h3 className='text-lg font-bold mb-6'>Description & Details</h3>
-        <div className='flex justify-center gap-4 text-blue-500 mb-4 text-xl space-x-9'>
+        <div className='flex justify-center gap-4 text-yellow-500 mb-4 text-xl space-x-9'>
           <p>
             <FaBed className='inline-block mr-2' /> {property.beds}{' '}
             <span className='hidden sm:inline'>Beds</span>
